@@ -45,14 +45,14 @@ Helper function to send data to thingspeak
 To edit this in Task 
 """
 
-def send_data_to_thingspeak(calculated_distance):
+def send_data_to_thingspeak(calculated_distance, field2, field3):
 
     # JSON payload, send data to ThingSpeak
     payload = {
         "api_key": API_KEY,
         "field1": calculated_distance,
-        "field2": "",
-        "field3": "",
+        "field2": field2,
+        "field3": field3,
     }
     requests.get(URL, params=payload)
 
@@ -111,6 +111,6 @@ def estimate_distance():
 
         check_for_object(calculated_distance)
 
-        send_data_to_thingspeak(calculated_distance)
+        send_data_to_thingspeak(calculated_distance, led_status, buzzer_status) # ultrasonic
 
         time.sleep(1)
