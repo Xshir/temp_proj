@@ -21,7 +21,7 @@ import time
 Helper function to setup pins  
 """
 
-
+# hello
 def setup_rpi():
     print("Setting up Pins")
     GPIO.setmode(GPIO.BCM)
