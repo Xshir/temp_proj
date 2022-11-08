@@ -16,4 +16,4 @@ buzzer_status = 0
 
 low_output_channels = (U_TRIG, LED_PIN, BUZZER_PIN)
 input_channels = (U_TRIG, U_ECHO)
-output_channels = (LED_PIN, BUZZER_PIN)
+output_channels = (LED_PIN, BUZZER_PIN, U_TRIG)
