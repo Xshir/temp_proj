@@ -107,7 +107,7 @@ def estimate_distance():
 
         GPIO.output(U_TRIG, False)
 
-        print("Distance: ", calculated_distance, "cm")
+        print("Distance: " + str(calculated_distance) + "cm")
 
         check_for_object(calculated_distance)
 
