@@ -69,7 +69,7 @@ def check_for_object(calculated_distance):
         led_status = 1
         buzzer_status = 1
         print("Object is too close")
-        GPIO.output(LED_PIN, led_status)
+        GPIO.output(LED_PIN, True)
         GPIO.output(BUZZER_PIN, False)
 
     else:
